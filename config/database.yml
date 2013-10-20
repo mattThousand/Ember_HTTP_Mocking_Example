@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: ember_http_mocking_example_development
+  database: 
   pool: 5
-  username: ember_http_mocking_example
+  username: 
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: ember_http_mocking_example_test
+  database: 
   pool: 5
-  username: ember_http_mocking_example
+  username: 
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: ember_http_mocking_example_production
+  database: 
   pool: 5
-  username: ember_http_mocking_example
+  username: 
   password:
