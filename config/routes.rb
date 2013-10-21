@@ -15,8 +15,7 @@ end
 resources :things, only: [:index],
   constraints: FormatTest.new(:json)
 
-get '*foo', to: 'ember#index', constraints: FormatTest.new(:html)
-get '/', to: 'ember#index', constraints: FormatTest.new(:html),
+get '*foo', to: 'ember#index', constraints: FormatTest.new(:html),
   constraints: lambda { |request|
     path = request.env["REQUEST_PATH"]
     path != "/qunit" && FormatTest.new(:html).matches?(request)

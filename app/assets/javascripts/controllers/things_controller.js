@@ -1,3 +1,1 @@
-EmberHttpMockingExample.ThingsController = Ember.ArrayController.extend({
-	itemController: 'thing'
-});
+EmberHttpMockingExample.ThingsController = Ember.ArrayController.extend({});
