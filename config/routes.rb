@@ -12,7 +12,7 @@ class FormatTest
   end
 end
 
-resources :entries, only: [:index],
+resources :things, only: [:index],
   constraints: FormatTest.new(:json)
 
 get '*foo', to: 'ember#index', constraints: FormatTest.new(:html)

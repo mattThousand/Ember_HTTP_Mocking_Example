@@ -13,7 +13,6 @@
 //= require vendor/handlebars-1.0.0.js
 //= require vendor/jquery-1.9.1.js
 //= require vendor/ember-1.0.0.js
-//= require vendor/ember-data.js
 //= require ember_http_mocking_example
 //= require_tree ./models
 //= require_tree ./views

@@ -1,1 +1,19 @@
-<h1>Here's some data</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= stylesheet_link_tag :application, media: :all %>
+    <%= javascript_include_tag :application %>
+</head>
+
+	<div id="ember">
+	  <h1>Here's some data</h1>
+
+	  <script type="x-handlebars" data-template-name="things">
+		  {{#each thing in controller}}
+		  	{{name}}
+		  {{/each}}
+	  </script>
+
+	</div>
+
+</html>
