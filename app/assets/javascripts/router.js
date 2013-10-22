@@ -12,6 +12,6 @@ EmberHttpMockingExample.ThingsRoute = Ember.Route.extend({
 	model: function(params) {
 		var _this = this;
 		this.render();
-		return EmberHttpMockingExample.Things.getData();
+		return EmberHttpMockingExample.Things.getThings();
 	}
 });

@@ -1,13 +1,12 @@
 //= require application
 //= require ember_http_mocking_example
-//= require sinon
 //= require_tree .
 //= require_self
 
-// Test Helpers
-	function exists(selector) {
-		return !!find(selector).length;
-	}
+
+// Declare Ember.Testing
+
+Ember.Testing = true;
 
 // EmberHttpMockingExample
 
@@ -17,20 +16,15 @@
 	EmberHttpMockingExample.setupForTesting();
 	EmberHttpMockingExample.injectTestHelpers(); 
 
-// HTTP Response
+// Define Fixtures
 
-	var response = {
-		"things":
-			[
-				{
-					"id":1,
-					"name":"Boris",
-					"birthday":"2013-10-21T02:39:47Z"
-				},
-				{
-					"id":2,
-					"name":"Suzy",
-					"birthday":"2013-10-21T02:40:01Z"
-				}
-			]
-		};
+EmberHttpMockingExample.FIXTURES = {};
+
+var bDay = new Date();
+
+EmberHttpMockingExample.FIXTURES['things'] = [
+	{ name: "Boris", birthday: bDay },
+	{ name: "Franz", birthday: bDay }
+];
+
+EmberHttpMockingExample.FIXTURES['/some/other/endpoint'] = [ 'stuff' ];
