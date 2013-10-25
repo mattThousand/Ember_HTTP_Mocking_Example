@@ -1,1 +1,1 @@
-Example code for a blog post about mocking data using Ember.js.
+Example code for a blog post about mocking data using Ember.js (http://www.matt-buckley.com/entries/1).
